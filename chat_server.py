@@ -67,7 +67,6 @@ print(f"Shared secret established: {shared_secret}")
 # Derive encryption key
 aes_key, salt = derive_key(shared_secret)
 
-# Chat loop
 while True:
     try:
         # Receive encrypted message from client
