@@ -42,7 +42,6 @@ def recv_fixed(sock, length):
         data += packet
     return data
 
-# Setup client
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect(('localhost', 5555))
 
@@ -63,7 +62,6 @@ print(f"Shared secret established: {shared_secret}")
 # Derive encryption key
 aes_key, salt = derive_key(shared_secret)
 
-# Chat loop
 while True:
     try:
         message = input("You: ")
