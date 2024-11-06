@@ -4,8 +4,8 @@ from Crypto.Random import get_random_bytes
 from Crypto.Cipher import AES
 from Crypto.Protocol.KDF import PBKDF2
 
-p = 23
-g = 5
+p = 28 # 23
+g = 10 # 5
 
 def generate_private_key():
     return bytes_to_long(get_random_bytes(16))
