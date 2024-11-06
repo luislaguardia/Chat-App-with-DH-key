@@ -5,8 +5,8 @@ from Crypto.Cipher import AES
 from Crypto.Protocol.KDF import PBKDF2
 
 # Parameters for Diffie-Hellman (prime and base)
-p = 23  # Use a larger prime in real-world scenarios
-g = 5   # Base
+p = 28  # Use a larger prime in real-world scenarios //23
+g = 10   # Base // 5
 
 def generate_private_key():
     return bytes_to_long(get_random_bytes(16))
